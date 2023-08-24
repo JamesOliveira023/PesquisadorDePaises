@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pesquisador de Países</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body class="bg-dark text-white">
+    <nav class="navbar bg-dark">
+  <div>
+    <a class="navbar-brand" href="#">
+      <img src="dnc.svg" alt="Bootstrap" width="100">
+    </a>
+  </div>
+</nav>
+<h1 class="text-center">Pesquisa de Países</h1>
+<!--Botao-->
+<div class="container input-group mb-3">
+    <input type="text" id="pais" class="form-control" placeholder="Nome do país (em inglês)" aria-label="Recipient's username" aria-describedby="button-addon2">
+    <button onclick="Procurar()" class="btn btn-outline-secondary bg-primary text-withe" type="button" id="button-addon2"><strong>Pesquisar</strong> </button>
+  </div>
+<!--Card-->
+  <div id="card" class="container text-center card text-dark p-3  " style="width: 18rem;">
+    <img id="bandeira" src=". . ." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title" id="nome" >Nome</h5>
+        </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><strong>Capital:</strong><p id="Capital">Teste</p></li>
+      <li class="list-group-item"><strong>Continente:</strong><p id="Cont">Teste</p></li>
+      <li class="list-group-item"><strong>População:</strong><p id="Pop">Teste</p></li>
+    </ul>
+    
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  </body>
+</html>
